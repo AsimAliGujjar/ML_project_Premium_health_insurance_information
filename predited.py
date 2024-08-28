@@ -3,9 +3,8 @@ import joblib
 young_model = joblib.load('artifacts/model_young.joblib')
 young_scaler= joblib.load('artifacts/scaler_young.joblib')
 rest_model= joblib.load('artifacts/model_rest.joblib')
-rest_scaler=joblib.load('artifscaler_rest.joblib')
-d={}
-# d.
+rest_scaler=joblib.load('artifacts/scaler_rest.joblib')
+
 def risk_score(data):
     risk_scores = {
         "diabetes": 6,
