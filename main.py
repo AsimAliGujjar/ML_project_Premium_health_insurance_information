@@ -1,7 +1,7 @@
 import streamlit as st
 import predited
 # Set up the title of the app
-st.title("Health Insurance Information")
+st.title("Health Insurance Cost Predictor")
 
 # Create three columns
 col1, col2, col3 = st.columns(3)
@@ -35,5 +35,5 @@ with col3:
 if st.button('Predict'):
     # Display the dictionary of selected inputs
     d=predited.predict_data(input_data)
-    st.write(f"Annual Premium Amount: {d[0]}")
+    st.write(f"Prediction Health Insurance Cost: {d[0]}")
 
