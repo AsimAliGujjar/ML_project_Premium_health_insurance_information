@@ -1,12 +1,9 @@
 import pandas as pd
 import joblib
-
-# import sklearn
-# Load the model
-young_model = joblib.load('artifacts\model_young.joblib')
-young_scaler= joblib.load('artifacts\scaler_young.joblib')
-rest_model= joblib.load('artifacts\model_rest.joblib')
-rest_scaler=joblib.load('artifacts\scaler_rest.joblib')
+young_model = joblib.load('artifacts/model_young.joblib')
+young_scaler= joblib.load('artifacts/scaler_young.joblib')
+rest_model= joblib.load('artifacts/model_rest.joblib')
+rest_scaler=joblib.load('artifscaler_rest.joblib')
 d={}
 # d.
 def risk_score(data):
